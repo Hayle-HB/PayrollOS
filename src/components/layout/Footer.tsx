@@ -133,12 +133,25 @@ export const Footer: React.FC<FooterProps> = ({ onOpenArchitectureModal }) => {
             <span>Enterprise Payroll & Workforce Infrastructure.</span>
           </div>
 
-          <button
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="text-slate-600 hover:text-slate-900 transition-colors"
-          >
-            Back to Top ↑
-          </button>
+          <div className="flex flex-wrap items-center gap-4">
+            <span>
+              Developed by{" "}
+              <a
+                href="https://linkedin.com/in/haylemeskel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium hover:text-indigo-600 transition-colors"
+              >
+                Haylemeskel Bantiyerga
+              </a>
+            </span>
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              className="text-slate-600 hover:text-slate-900 transition-colors"
+            >
+              Back to Top ↑
+            </button>
+          </div>
         </div>
       </div>
     </footer>
